@@ -1,4 +1,6 @@
 import Header from './_components/Header';
+import Section from './_components/Section';
+import Main from './_components/Main';
 import Footer from './_components/Footer';
 
 export default function Home() {
@@ -6,12 +8,9 @@ export default function Home() {
     <div className={`max-w-7xl mx-auto my-0`}>
       <Header/>
 
-      <section>
-        {/* 프로필 카드 / 간단한 경력 정도 */}
-      </section>
-      <main>
-        {/* 프로젝트 포트폴리오 리스트 나열 */}
-      </main>
+      <Section/>
+
+      <Main/>
 
       <Footer/>
     </div>
