@@ -18,7 +18,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="ko"
       className={`h-full antialiased`}
     >
-      <body className="min-h-full">
+      <body className={`min-h-full`}>
         {children}
       </body>
     </html>
