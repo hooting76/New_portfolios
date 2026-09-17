@@ -26,3 +26,9 @@ export default function Page() {
 }
  ```   
 
++++ 추가 사항
+없는 아이콘의 경우 패키지 추가 설치가 필요하다.
+
+```
+npm install @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons
+```   

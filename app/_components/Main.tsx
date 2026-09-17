@@ -4,6 +4,8 @@ import { useState } from "react";
 import profileImage from "../img/ProfileView.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faCertificate, faStar, faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
+
 
 // 만나이 계산 함수 시작
 const birthDate = new Date(1995, 10, 20);
@@ -86,19 +88,130 @@ const Main = () => {
                                 <span><FontAwesomeIcon icon={faBriefcase} size="lg"/></span>
                                 <span className={`text-center ml-2`}>경력</span>
                             </h5>
-                            <p>
-                                내용
-                            </p>
+                            <div>
+                                <h5 className={`text-md font-semibold mb-3`}>
+                                    ㈜ 한국교육평가원 
+                                    <span className={`text-gray-600 italic ml-3`}>(22.10 - 24.12)</span>
+                                </h5>
+                                <ul className={`flex flex-row gap-4`}>
+                                    <li>
+                                        <ul className={`flex flex-col gap-2 h-full`}>
+                                            <li>직무</li>
+                                            <li>직책</li>
+                                            <li>스킬</li>
+                                            <li>업무</li>
+                                        </ul>                                        
+                                    </li>
+                                    <li>
+                                        <ul className={`flex flex-col gap-2`}>
+                                            <li>웹 퍼블리셔</li>
+                                            <li>주임</li>
+                                            <li>
+                                                <span className={`bg-purple-500 text-white font-semibold p-1 rounded-md`}>Clasic ASP</span>
+                                                <span className={`bg-green-500 text-white font-semibold p-1 rounded-md ml-2`}>MS-SQL</span>
+                                            </li>
+                                            <li>서비스 관련 페이지 유지보수, 신규페이지 개발 및 반응형 페이지 개발</li>
+                                        </ul>                                          
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div className={`mt-3 p-3 bg-white rounded-md shadow-md hidden transition-all duration-300 ease-in-out`}>
                             <h5 className={`text-lg font-semibold mb-2 border-b border-gray-300 pb-1`}>
                                 <span><FontAwesomeIcon icon={faCertificate} size="lg"/></span>
-                                <span className={`text-center ml-2`}>훈련사항</span>
+                                <span className={`text-center ml-2`}>훈련사항#1</span>
                             </h5>
-                            <p>
-                                내용
-                            </p>
+                            <div>
+                                <h5 className={`text-md font-semibold mb-3`}>
+                                    프로젝트기반 웹&앱(자바, 스프링, 리액트, 노코드) SW개발자 양성과정 
+                                    <span className={`text-gray-600 italic ml-3`}>(25.04 - 25.11)</span>
+                                </h5>
+                                <ul className={`flex flex-row gap-4`}>
+                                    <li>
+                                        <ul className={`flex flex-col gap-3 h-full`}>
+                                            <li>기관</li>
+                                            <li>스킬</li>
+                                            <li>자료</li>
+                                            <li>목적</li>
+                                        </ul>                                        
+                                    </li>
+                                    <li>
+                                        <ul className={`flex flex-col gap-3`}>
+                                            <li>성남 그린컴퓨터 아카데미</li>
+                                            <li>                                            
+                                                <span className={`bg-orange-500 text-white font-semibold p-1 rounded-md`}>JAVA</span>
+                                                <span className={`bg-yellow-500 text-white font-semibold p-1 rounded-md ml-2`}>Javascript</span>
+                                                <span className={`bg-blue-300 text-white font-semibold p-1 rounded-md ml-2`}>MariaDB</span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <a
+                                                        href="https://github.com/hooting76/blue-crab-lms"
+                                                        rel="noopener noreferrer"
+                                                        target="_blank"
+                                                        className={`rounded-md bg-gray-900 px-2 py-2 font-semibold text-white transition hover:bg-gray-700`}
+                                                    >
+                                                        <FontAwesomeIcon icon={faGithub} size="lg"/>
+                                                    </a>
+                                                </span>
+                                                <span>
+                                                    <a
+                                                        href="https://www.youtube.com/watch?v=Q0Sch4sTW0g"
+                                                        rel="noopener noreferrer"
+                                                        target="_blank"
+                                                        className={`rounded-md bg-red-600 px-2 py-2 font-semibold text-white transition hover:bg-red-400 ml-2`}
+                                                    >
+                                                        발표영상
+                                                        <FontAwesomeIcon icon={faYoutube} size="lg"/>
+                                                    </a>
+                                                </span>
+                                            </li>
+                                            <li>웹 서비스 전반에 대한 이해와 팀 프로젝트 경험</li>
+                                        </ul>                                          
+                                    </li>
+                                </ul>                                
+                            </div>
+                        </div>
+
+                        <div className={`mt-3 p-3 bg-white rounded-md shadow-md hidden transition-all duration-300 ease-in-out`}>
+                            <h5 className={`text-lg font-semibold mb-2 border-b border-gray-300 pb-1`}>
+                                <span><FontAwesomeIcon icon={faCertificate} size="lg"/></span>
+                                <span className={`text-center ml-2`}>훈련사항#2</span>
+                            </h5>
+                            <div>
+                                <h5 className={`text-md font-semibold mb-3`}>
+                                    [디지털디자인]반응형/웹퍼블리셔/프론트엔드 웹개발자 과정
+                                    <span className={`text-gray-600 italic ml-3`}>(21.12 - 22.05)</span>
+                                </h5>
+                                <ul className={`flex flex-row gap-4`}>
+                                    <li>
+                                        <ul className={`flex flex-col gap-3 h-full`}>
+                                            <li>기관</li>
+                                            <li>스킬</li>
+                                            <li>자료</li>
+                                            <li>목적</li>
+                                        </ul>                                        
+                                    </li>
+                                    <li>
+                                        <ul className={`flex flex-col gap-3`}>
+                                            <li>더 휴먼 컴퓨터아트 아카데미</li>
+                                            <li>
+                                                <span className={`bg-orange-400 text-white font-semibold p-1 rounded-md`}>HTML5</span>
+                                                <span className={`bg-blue-300 text-white font-semibold p-1 rounded-md ml-2`}>CSS3</span>                                        
+                                                <span className={`bg-yellow-500 text-white font-semibold p-1 rounded-md ml-2`}>Javascript</span>
+                                                
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    asdf
+                                                </span>
+                                            </li>
+                                            <li>기초적인 반응형 개발 및 크로스브라우징, 프론트엔드 기초 이해</li>
+                                        </ul>                                          
+                                    </li>
+                                </ul>                                
+                            </div>
                         </div>
 
                         <div className={`mt-3 p-3 bg-white rounded-md shadow-md hidden transition-all duration-300 ease-in-out`}>
@@ -106,9 +219,9 @@ const Main = () => {
                                 <span><FontAwesomeIcon icon={faStar} size="lg"/></span>
                                 <span className={`text-center ml-2`}>수상&자격증</span>
                             </h5>
-                            <p>
-                                내용
-                            </p>
+                            <div>
+                                
+                            </div>
                         </div>
 
                         <ul className={`flex flex-row justify-end absolute top-3 right-2 bg-gray-100 p-2 rounded-md cursor-pointer`} >
@@ -122,20 +235,5 @@ const Main = () => {
         </main>
     );
 }
-
-                        {/* <ul className={`flex flex-row justify-around items-center vertical-center`}>
-                            <li className={`bg-white p-2 rounded-md shadow-sm`}>
-                                <span><FontAwesomeIcon icon={faBriefcase} size="lg"/></span>
-                                <span className={`text-center ml-2`}>경력</span>
-                            </li>
-                            <li className={`bg-white p-2 rounded-md shadow-sm`}>
-                                <span><FontAwesomeIcon icon={faCertificate} size="lg"/></span>
-                                <span className={`text-center ml-2`}>훈련사항</span>
-                            </li>
-                            <li className={`bg-white p-2 rounded-md shadow-sm`}>
-                                <span><FontAwesomeIcon icon={faStar} size="lg"/></span>
-                                <span className={`text-center ml-2`}>수상&자격증</span>
-                            </li>
-                        </ul> */}
 
 export default Main;
