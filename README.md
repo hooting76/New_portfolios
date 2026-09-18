@@ -32,3 +32,8 @@ export default function Page() {
 ```
 npm install @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons
 ```   
+=====   
+
+
+# 스와이퍼 공식문서    
+ - https://swiperjs.com/react
