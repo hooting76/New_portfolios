@@ -21,13 +21,6 @@ const Section = () => {
                         >
                             GitHub
                         </a>
-                        {/* <a
-                            href="mailto:ggongco1120@gmail.com"
-                            rel="noopener noreferrer"
-                            className={`rounded-md bg-indigo-600 px-5 py-2 font-semibold text-white transition hover:bg-indigo-500`}
-                        >
-                            이메일
-                        </a> */}
                     </div>
                 </h3>
             </div>
