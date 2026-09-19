@@ -3,6 +3,7 @@ import Section from './_components/Section';
 import Main from './_components/Main';
 import Portfolio from './_components/Portfolio';
 import Aside from './_components/Aside';
+// import Article from './_components/Article';
 import Footer from './_components/Footer';
 
 export default function Home() {
@@ -17,6 +18,8 @@ export default function Home() {
       <Portfolio/>
 
       <Aside/>
+
+      {/* <Article/> */}
 
       <Footer/>
     </div>
