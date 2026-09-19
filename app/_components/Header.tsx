@@ -37,7 +37,7 @@ const Header = () => {
                             <FontAwesomeIcon icon={faUser} size="lg"/>
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a 
                             href={`${process.env.NODE_ENV === 'production' ? '/New_portfolios' : ''}/history.hwp`}
                             download="조창훈_경력기술서.hwp"
@@ -46,7 +46,7 @@ const Header = () => {
                         >
                             <FontAwesomeIcon icon={faFile} size="lg"/>
                         </a>                        
-                    </li>
+                    </li> */}
                 </ul>
                 <div 
                     className={`dk-wrap absolute -top-3 -left-3 w-screen h-screen bg-black opacity-50 hidden`}
