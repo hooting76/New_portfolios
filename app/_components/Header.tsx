@@ -1,4 +1,5 @@
 'use client';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faFile, faUser } from '@fortawesome/free-solid-svg-icons';
 
@@ -27,7 +28,6 @@ const Header = () => {
 
             <nav className={`absolute top-0 left-0 z-30 p-2 bg-white shadow-md rounded-md border border-indigo-100`} >
                 <ul>
-                    {/* <li><FontAwesomeIcon icon={faUser} size="lg"/></li> */}
                     <li>
                         <a 
                             href={`${process.env.NODE_ENV === 'production' ? '/New_portfolios' : ''}/20260919.pdf`}
@@ -37,16 +37,15 @@ const Header = () => {
                             <FontAwesomeIcon icon={faUser} size="lg"/>
                         </a>
                     </li>
-                    {/* <li>
+                    <li>
                         <a 
-                            href={`${process.env.NODE_ENV === 'production' ? '/New_portfolios' : ''}/history.hwp`}
-                            download="조창훈_경력기술서.hwp"
+                            href={`${process.env.NODE_ENV === 'production' ? '/New_portfolios' : ''}/history.pdf`}
                             rel="noopener noreferrer"
                             target="_blank"
                         >
                             <FontAwesomeIcon icon={faFile} size="lg"/>
                         </a>                        
-                    </li> */}
+                    </li>
                 </ul>
                 <div 
                     className={`dk-wrap absolute -top-3 -left-3 w-screen h-screen bg-black opacity-50 hidden`}
