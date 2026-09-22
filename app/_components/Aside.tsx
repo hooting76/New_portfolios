@@ -18,7 +18,7 @@ const techStacks = [
 const Aside = () =>{
     return(
         <aside className={`bg-gray-300 p-3 pb-7 pt-5`}>
-            <h6 className={`text-2xl font-bold text-center`}>My Stack</h6>
+            <h6 className={`text-2xl font-bold text-center mb-3`}>My Stack</h6>
             <div className="bg-gray-900 text-white min-h-fit p-10">
                 <div className="grid grid-cols md:grid-cols-3 lg:grid-cols-5 gap-2">
                     {techStacks.map((stack, index) => (
