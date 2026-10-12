@@ -17,7 +17,7 @@ import PortfolioDisplay from '../img/portfolio-display.png';
 
 const Portfolio = () =>{
     return(
-        <section className={`bg-white p-3 pb-7 pt-5`}>
+        <section className={`bg-white p-10 pb-7 pt-5`}>
             <h6 className={`text-center text-2xl font-semibold`}>
                 Portfolio
             </h6>

@@ -60,7 +60,7 @@ const Main = () => {
 
     return (
         <main>
-            <div className={`about w-full h-full p-5 pb-10 bg-gray-300 shadow-md`}>
+            <div className={`about w-full h-full px-10 py-10 bg-gray-300 shadow-md`}>
                 <h4 className={`text-2xl font-bold text-center`}>About me</h4>
                 <div className={`flex flex-col md:flex-row gap-3 mt-3 bg-white p-3 rounded-md shadow-md justify-around items-center`}>
                     <div className={`me_info01 flex flex-col pt-4 items-center`}>
