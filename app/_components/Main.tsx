@@ -131,41 +131,17 @@ const Main = () => {
                                         <ul className={`flex flex-col gap-3 h-full`}>
                                             <li>기관</li>
                                             <li>스킬</li>
-                                            {/* <li>자료</li> */}
                                             <li>목적</li>
                                         </ul>                                        
                                     </li>
                                     <li>
                                         <ul className={`flex flex-col gap-3`}>
                                             <li>성남 그린컴퓨터 아카데미</li>
-                                            <li>                                            
+                                            <li>
                                                 <span className={`bg-orange-500 text-white font-semibold p-1 rounded-md`}>JAVA</span>
-                                                <span className={`bg-yellow-500 text-white font-semibold p-1 rounded-md ml-2`}>Javascript</span>
-                                                <span className={`bg-blue-300 text-white font-semibold p-1 rounded-md ml-2`}>MariaDB</span>
+                                                <span className={`bg-yellow-500 text-white font-semibold p-1 rounded-md ml-1`}>JS</span>
+                                                <span className={`bg-blue-300 text-white font-semibold p-1 rounded-md ml-1`}>MariaDB</span>
                                             </li>
-                                            {/* <li>
-                                                <span>
-                                                    <a
-                                                        href="https://github.com/hooting76/blue-crab-lms"
-                                                        rel="noopener noreferrer"
-                                                        target="_blank"
-                                                        className={`rounded-md bg-gray-900 px-2 py-2 font-semibold text-white transition hover:bg-gray-700`}
-                                                    >
-                                                        <FontAwesomeIcon icon={faGithub} size="lg"/>
-                                                    </a>
-                                                </span>
-                                                <span>
-                                                    <a
-                                                        href="https://www.youtube.com/watch?v=Q0Sch4sTW0g"
-                                                        rel="noopener noreferrer"
-                                                        target="_blank"
-                                                        className={`rounded-md bg-red-600 px-2 py-2 font-semibold text-white transition hover:bg-red-400 ml-2`}
-                                                    >
-                                                        발표영상
-                                                        <FontAwesomeIcon icon={faYoutube} size="lg"/>
-                                                    </a>
-                                                </span>
-                                            </li> */}
                                             <li>웹 서비스 전반에 대한 이해와 팀 프로젝트 경험</li>
                                         </ul>                                          
                                     </li>
@@ -197,8 +173,7 @@ const Main = () => {
                                             <li>
                                                 <span className={`bg-orange-400 text-white font-semibold p-1 rounded-md`}>HTML5</span>
                                                 <span className={`bg-blue-300 text-white font-semibold p-1 rounded-md ml-2`}>CSS3</span>                                        
-                                                <span className={`bg-yellow-500 text-white font-semibold p-1 rounded-md ml-2`}>Javascript</span>
-                                                
+                                                <span className={`bg-yellow-500 text-white font-semibold p-1 rounded-md ml-2`}>JS</span>
                                             </li>
                                             <li>기초적인 반응형 개발 및 크로스브라우징, 프론트엔드 기초 이해</li>
                                         </ul>                                          
