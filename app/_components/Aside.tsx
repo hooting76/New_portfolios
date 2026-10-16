@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTypescript, faHtml5, faCss3, faJs, faNodeJs, faTailwindCss } from '@fortawesome/free-brands-svg-icons';
+import { faTypescript, faHtml5, faCss3, faJs, faNodeJs, faTailwindCss, faJava, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 const techStacks = [
@@ -9,8 +9,10 @@ const techStacks = [
     { name: "JavaScript", color: "bg-yellow-500", icon: faJs },
     { name: "HTML5", color: "bg-orange-600", icon: faHtml5 },
     { name: "CSS3", color: "bg-blue-400", icon: faCss3 },
+    { name: "ReactJS", color: "bg-blue-400", icon: faReact },
     { name: "Classic ASP", color: "bg-purple-600", icon: faCode },
     { name: "jQuery", color: "bg-red-600", icon: faJs },
+    { name: "JAVA", color: "bg-red-600", icon: faJava },
     { name: "MS-SQL", color: "bg-green-700", icon: faDatabase },
     { name: "MariaDB", color: "bg-pink-600", icon: faDatabase },
 ];
