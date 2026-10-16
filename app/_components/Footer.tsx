@@ -6,7 +6,7 @@ export default function Footer() {
     return(
         <footer className={`font-semibold text-center bg-white`}>
             <h6 className={`text-2xl font-bold text-center my-3`}>Contact</h6>
-            <div className={`flex flex-row justify-center gap-10 mt-5 flex-wrap py-3`}>
+            <div className={`flex flex-row justify-center mt-5 flex-wrap py-3 gap-3 sm:gap-5 md:gap-7 lg:gap-10`}>
                 <a
                     href="mailto:ggongco1120@gmail.com"
                     rel="noopener noreferrer"
