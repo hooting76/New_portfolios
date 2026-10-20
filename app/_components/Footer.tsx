@@ -4,7 +4,7 @@ import { faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
     return(
-        <footer className={`font-semibold text-center bg-white`}>
+        <footer className={`font-semibold text-center bg-gray-300`}>
             <h6 className={`text-2xl font-bold text-center my-3`}>Contact</h6>
             <div className={`flex flex-row justify-center mt-5 flex-wrap py-3 gap-3 sm:gap-5 md:gap-7 lg:gap-10`}>
                 <a
@@ -39,7 +39,7 @@ export default function Footer() {
                     <FontAwesomeIcon icon={faPhoneFlip} size="lg"/>
                 </a>
             </div>
-            <p className={`py-5 mt-5 text-gray-600 border-t border-gray-200`}>* 본 페이지는 상업적 목적이 없는 개인 포트폴리오 페이지임을 알립니다.</p>
+            <p className={`py-5 mt-5 text-gray-600 border-t border-gray-200 bg-white`}>* 본 페이지는 상업적 목적이 없는 개인 포트폴리오 페이지임을 알립니다.</p>
         </footer>
     );
 };

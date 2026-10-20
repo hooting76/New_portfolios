@@ -80,9 +80,9 @@ const Main = () => {
                             <span>컴퓨터공학부 졸업</span>
                         </p>                                         
                     </div>
-                    <div className={`me_info02 flex w-full md:w-1/2 flex-col gap-3 p-3 bg-gray-100 rounded-md shadow-md relative`}>
+                    <div className={`me_info02 flex w-full md:w-1/2 flex-col gap-3 p-3 bg-gray-100 rounded-md shadow-md relative `}>
 
-                        <div className={`mt-3 p-3 bg-white rounded-md shadow-md transition-all duration-300 ease-in-out`}>
+                        <div className={`mt-3 p-3 bg-white rounded-md shadow-md flex flex-col justify-start gap-5`}>
                             <h5 className={`text-lg font-semibold mb-2 border-b border-gray-300 pb-1`}>
                                 <span><FontAwesomeIcon icon={faBriefcase} size="lg"/></span>
                                 <span className={`text-center ml-2`}>경력</span>
@@ -105,9 +105,9 @@ const Main = () => {
                                         <ul className={`flex flex-col gap-2`}>
                                             <li>웹 퍼블리셔</li>
                                             <li>주임</li>
-                                            <li>
-                                                <span className={`bg-purple-500 text-white font-semibold p-1 rounded-md`}>Clasic ASP</span>
-                                                <span className={`bg-green-500 text-white font-semibold p-1 rounded-md ml-2`}>MS-SQL</span>
+                                            <li className={`flex flex-row gap-1`}>
+                                                <span className={`bg-purple-500 text-white font-semibold px-1 rounded-md break-keep`}>Clasic ASP</span>
+                                                <span className={`bg-green-500 text-white font-semibold px-1 rounded-md break-keep`}>MS-SQL</span>
                                             </li>
                                             <li>서비스 관련 페이지 유지보수, 신규페이지 개발 및 반응형 페이지 개발</li>
                                         </ul>                                          
@@ -116,7 +116,7 @@ const Main = () => {
                             </div>
                         </div>
 
-                        <div className={`mt-3 p-3 bg-white rounded-md shadow-md hidden transition-all duration-300 ease-in-out`}>
+                        <div className={`mt-3 p-3 bg-white rounded-md shadow-md flex flex-col justify-start gap-5 hidden`}>
                             <h5 className={`text-lg font-semibold mb-2 border-b border-gray-300 pb-1`}>
                                 <span><FontAwesomeIcon icon={faCertificate} size="lg"/></span>
                                 <span className={`text-center ml-2`}>훈련사항#1</span>
@@ -137,10 +137,9 @@ const Main = () => {
                                     <li>
                                         <ul className={`flex flex-col gap-3`}>
                                             <li>성남 그린컴퓨터 아카데미</li>
-                                            <li>
-                                                <span className={`bg-orange-500 text-white font-semibold p-1 rounded-md`}>JAVA</span>
-                                                <span className={`bg-yellow-500 text-white font-semibold p-1 rounded-md ml-1`}>JS</span>
-                                                <span className={`bg-blue-300 text-white font-semibold p-1 rounded-md ml-1`}>MariaDB</span>
+                                            <li className={`flex flex-row gap-1`}>
+                                                <span className={`bg-orange-500 text-white font-semibold px-1 rounded-md`}>Spring Boot</span>
+                                                <span className={`bg-blue-500 text-white font-semibold px-1 rounded-md`}>React</span>
                                             </li>
                                             <li>웹 서비스 전반에 대한 이해와 팀 프로젝트 경험</li>
                                         </ul>                                          
@@ -149,7 +148,7 @@ const Main = () => {
                             </div>
                         </div>
 
-                        <div className={`mt-3 p-3 bg-white rounded-md shadow-md hidden transition-all duration-300 ease-in-out`}>
+                        <div className={`mt-3 p-3 bg-white rounded-md shadow-md flex flex-col justify-start gap-5 hidden`}>
                             <h5 className={`text-lg font-semibold mb-2 border-b border-gray-300 pb-1`}>
                                 <span><FontAwesomeIcon icon={faCertificate} size="lg"/></span>
                                 <span className={`text-center ml-2`}>훈련사항#2</span>
@@ -170,10 +169,10 @@ const Main = () => {
                                     <li>
                                         <ul className={`flex flex-col gap-3`}>
                                             <li>더 휴먼 컴퓨터아트 아카데미</li>
-                                            <li>
-                                                <span className={`bg-orange-400 text-white font-semibold p-1 rounded-md`}>HTML5</span>
-                                                <span className={`bg-blue-300 text-white font-semibold p-1 rounded-md ml-2`}>CSS3</span>                                        
-                                                <span className={`bg-yellow-500 text-white font-semibold p-1 rounded-md ml-2`}>JS</span>
+                                            <li className={`flex flex-row gap-1`}>
+                                                <span className={`bg-orange-400 text-white font-semibold px-1 rounded-md`}>HTML5</span>
+                                                <span className={`bg-blue-300 text-white font-semibold px-1 rounded-md`}>CSS3</span>                                        
+                                                <span className={`bg-yellow-500 text-white font-semibold px-1 rounded-md`}>JS</span>
                                             </li>
                                             <li>기초적인 반응형 개발 및 크로스브라우징, 프론트엔드 기초 이해</li>
                                         </ul>                                          
@@ -182,7 +181,7 @@ const Main = () => {
                             </div>
                         </div>
 
-                        <div className={`mt-3 p-3 bg-white rounded-md shadow-md hidden transition-all duration-300 ease-in-out`}>
+                        <div className={`mt-3 p-3 bg-white rounded-md shadow-md flex flex-col justify-start gap-5 hidden `}>
                             <h5 className={`text-lg font-semibold mb-2 border-b border-gray-300 pb-1`}>
                                 <span><FontAwesomeIcon icon={faStar} size="lg"/></span>
                                 <span className={`text-center ml-2`}>수상&자격증</span>

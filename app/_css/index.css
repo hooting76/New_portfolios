@@ -38,6 +38,10 @@ nav.on > .dk-wrap{
     display: block;
 }
 
+.me_info02 > div{
+    min-height: 275px;
+}
+
 @media screen and (max-width: 768px) {
     header {
         display: block;

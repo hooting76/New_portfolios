@@ -12,7 +12,7 @@ const techStacks = [
     { name: "ReactJS", color: "bg-blue-400", icon: faReact },
     { name: "Classic ASP", color: "bg-purple-600", icon: faCode },
     { name: "jQuery", color: "bg-red-600", icon: faJs },
-    { name: "JAVA", color: "bg-red-600", icon: faJava },
+    { name: "Spring Boot", color: "bg-red-600", icon: faJava },
     { name: "MS-SQL", color: "bg-green-700", icon: faDatabase },
     { name: "MariaDB", color: "bg-pink-600", icon: faDatabase },
 ];
