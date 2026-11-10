@@ -1,45 +1,32 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGoogle, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
     return(
-        <footer className={`font-semibold text-center bg-gray-300`}>
-            <h6 className={`text-2xl font-bold text-center my-3`}>Contact</h6>
-            <div className={`flex flex-row justify-center mt-5 flex-wrap py-3 gap-3 sm:gap-5 md:gap-7 lg:gap-10`}>
-                <a
-                    href="mailto:ggongco1120@gmail.com"
-                    rel="noopener noreferrer"
-                    className={`rounded-md bg-indigo-600 px-5 py-2 font-semibold text-white transition hover:bg-indigo-500`}
-                >
-                    <FontAwesomeIcon icon={faGoogle} size="lg"/>
-                </a>
-
-                <a
-                    href="https://github.com/hooting76"
-                    rel="noopener noreferrer"
-                    className={`rounded-md bg-gray-900 px-5 py-2 font-semibold text-white transition hover:bg-gray-500`}
-                >
-                    <FontAwesomeIcon icon={faGithub} size="lg"/>
-                </a>         
-
-                <a
-                    href="https://www.instagram.com/hoooonida/"
-                    rel="noopener noreferrer"
-                    className={`rounded-md bg-red-700 px-5 py-2 font-semibold text-white transition hover:bg-red-500`}
-                >
-                    <FontAwesomeIcon icon={faInstagram} size="lg"/>
-                </a>                          
-
-                <a
-                    href="tel:+821021585184"
-                    rel="noopener noreferrer"
-                    className={`rounded-md bg-green-600 px-5 py-2 font-semibold text-white transition hover:bg-green-500`}
-                >
-                    <FontAwesomeIcon icon={faPhoneFlip} size="lg"/>
-                </a>
+        <footer className="bg-lime-100 px-15 pt-30 pb-5">
+            <div className="flex flex-wrap justify-between gap-3 items-baseline">
+                <h2 className="text-4xl font-bold">Journey Together</h2>
+                <div className="pr-10 flex flex-col justify-center items-start">
+                    <a 
+                        className="border-b mb-3"
+                        href="mailto:ggongco1120@gmail.com"
+                    >
+                        ggongco1120@gmail.com
+                    </a>
+                    <a  className="border-b mb-3"
+                        href="https://github.com/hooting76"
+                    >
+                        Github ↗
+                    </a>
+                    <a  className="border-b mb-3"
+                        href="tel:+821021585184"
+                    >
+                        Calling here
+                    </a>
+                </div>
             </div>
-            <p className={`py-5 mt-5 text-gray-600 border-t border-gray-200 bg-white`}>* 본 페이지는 상업적 목적이 없는 개인 포트폴리오 페이지임을 알립니다.</p>
+
+            <div className="pt-15">
+                <p className="text-right text-sm text-gray-400">본 페이지는 상업적 목적이 없는 개인 포트폴리오입니다.</p>
+            </div>
         </footer>
     );
 };

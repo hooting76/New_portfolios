@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+#list-mark > li::before{
+  content: "↗";
+  margin-right: 9px;
+  color: coral;
+}

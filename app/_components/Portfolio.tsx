@@ -1,15 +1,3 @@
-'use client'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
-
-import { Pagination, Autoplay } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css';
-import 'swiper/css/pagination';
-
 import Koedu from '../img/ko-edu.jpg';
 import Hsclone from '../img/hs-clone.jpg';
 import FireClone from '../img/firefighter.png';
@@ -17,214 +5,223 @@ import PortfolioDisplay from '../img/portfolio-display.png';
 
 const Portfolio = () =>{
     return(
-        <section className={`bg-white p-10 pb-7 pt-5`}>
-            <h6 className={`text-center text-2xl font-semibold`}>
-                Portfolio
-            </h6>
-            <Swiper
-                modules={[Pagination, Autoplay ]}
-                spaceBetween={0}
-                slidesPerView={1}
-                autoplay={{
-                    delay: 5000,
-                    pauseOnMouseEnter: true,
-                }}
-                loop={true}
-                className={`mt-3 bg-gray-100 rounded-md shadow-md box-border`}
-                pagination={{ clickable: true }}
-            >
+        <section 
+            id='project'
+            className="border-b-1 border-gray-200 bg-white px-15 py-30"
+        >
+            <div className="flex flex-wrap justify-between gap-2 items-baseline mb-10">
+                <h2 className="text-4xl font-bold">My work</h2>
+                <p className="text-gray-400 pr-10">개인 작업과 팀 프로젝트, 실무에서 다룬 내용을 소개합니다.</p>
+            </div>
 
+            <div className='flex flex-col items-start gap-10'>
 
-                <SwiperSlide>
-                    <div className={`px-5 py-15 box-border bg-gray-100 flex flex-row justify-around items-center flex-wrap gap-5`}>
-                        <div className={`flex flex-row justify-around items-center gap-10 flex-wrap`}>
-                            <h6 className={`text-xl font-semibold`}>
-                                포트폴리오 페이지<br/>
-                                <span className={`text-gray-600 italic text-sm`}>* 1인 프로젝트</span>
-                            </h6>
-                            <img 
-                                src={PortfolioDisplay.src} 
-                                alt="포트폴리오 페이지" 
-                                className="w-50 h-50 object-cover rounded-full"
-                            />
-                        </div>
-                        <div>
-                            <ul className={`flex flex-col gap-2 list-disc font-semibold text-gray-500`}>
-                                <li>VScode, Photoshop</li>
-                                <li>NextJS(ReactJS, Typescript), Tailwind CSS</li>
-                                <li>반응형 코드 일부 적용</li>
-                                <li>첫 NextJS 프로젝트</li>
-                                <li className={`list-none`}>
-                                    <a 
-                                        href='https://github.com/hooting76/New_portfolios'
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                        className={`rounded-md bg-gray-900 px-2 py-2 font-semibold text-white transition mr-2 hover:bg-gray-700`}
-                                    >
-                                        <span><FontAwesomeIcon icon={faGithub} size="lg"/></span>
-                                        소스코드
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>                    
-                </SwiperSlide>
+                {/* portfolio */}
+                <article className='grid overflow-hidden min-h-90 border-gray-200 border rounded w-full lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1'>
 
-
-                <SwiperSlide>
-                    <div className={`px-5 py-15 box-border bg-gray-100 flex flex-row justify-around items-center flex-wrap gap-5`}>
-                        <div className={`flex flex-row justify-around items-center gap-10 flex-wrap`}>
-                            <h6 className={`text-xl font-semibold`}>
-                                블루크랩 LMS 프로젝트<br/>
-                                <span className={`text-gray-600 italic text-sm`}>* 25년 훈련과정 LMS 프로젝트</span>
-                            </h6>
-                            <iframe src="https://www.youtube.com/embed/Q0Sch4sTW0g" title="블루크랩 발표"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className={`w-50 h-50 object-cover rounded-md`}></iframe>
-                        </div>
-                        <div>
-                            <ul className={`flex flex-col gap-2 list-disc font-semibold text-gray-500`}>
-                                <li>VScode, EdrawMind, Discord</li>
-                                <li>JAVA, MariaDB, Javascript(ReactJS), HTML5, CSS3</li>
-                                <li>전체 반응형 페이지 작업 적용</li>
-                                <li>서비스 실제 배포 및 PWA 서비스</li>
-                                <li>팀 내 팀장 역할 수행</li>
-                                <li className={`list-none`}>
-                                    <a 
-                                        href='https://github.com/hooting76/blue-crab-lms'
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                        className={`rounded-md bg-gray-900 px-2 py-2 font-semibold text-white transition mr-2 hover:bg-gray-700`}
-                                    >
-                                        <span><FontAwesomeIcon icon={faGithub} size="lg"/></span>
-                                        소스코드
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>                    
-                </SwiperSlide>
-
-
-                <SwiperSlide>
-                    <div className={`px-5 py-15 box-border bg-gray-100 flex flex-row justify-around items-center relative flex-wrap gap-5`}>
-                        <div className={`flex flex-row justify-around items-center gap-10 flex-wrap`}>
-                            <h6 className={`text-xl font-semibold`}>
-                                ㈜ 한국교육평가원<br/>
-                                <span className={`text-gray-600 italic text-sm`}>* 해당 이미지는 회사 내 서비스 일부 화면의 예시</span>
-                            </h6>
-                            <img 
-                                src={Koedu.src}
-                                alt='한국교육평가원 포트폴리오'
-                                className="w-50 h-50 object-cover rounded-full"
-                             />
-                        </div>
-                        <div>
-                            <ul className={`flex flex-col gap-2 list-disc font-semibold text-gray-500`}>
-                                <li>Notepad++, Photoshop, Illustrator</li>
-                                <li>Classic ASP, MS-SQL, HTML5, CSS3, Javascript, jQuery</li>
-                                <li>서비스중인 페이지에 대한 코드 최적화 작업(jQuery, Javascript)</li>
-                                <li>신규 페이지 개발(Classic ASP, MS-SQL)</li>
-                                <li>반응형 페이지 개발(HTML5, CSS3)</li>
-                                <li>웹 디자인 작업(Photoshop, Illustrator)</li>
-                            </ul>
-                        </div>
-                        <p className={`px-3 text-gray-600 text-sm bg-gray-100 absolute bottom-0 left-0`}>*회사 보안상의 이유로 자세한 내용 공개 불가</p>
+                    <div>
+                        <img 
+                            src={PortfolioDisplay.src} 
+                            alt="PortfolioDisplay" 
+                            className='w-full h-full min-h-80'
+                            style={{ objectFit: 'cover' }}
+                        />
                     </div>
-                </SwiperSlide>
 
-
-                <SwiperSlide>
-                    <div className={`px-5 py-15 box-border bg-gray-100 flex flex-row justify-around items-center flex-wrap gap-5`}>
-                        <div className={`flex flex-row justify-around items-center gap-10 flex-wrap`}>
-                            <h6 className={`text-xl font-semibold`}>
-                                한신대학교 클론코딩<br/>
-                                <span className={`text-gray-600 italic text-sm`}>* 1인프로젝트</span>
-                            </h6>
-                            <img 
-                                src={Hsclone.src}
-                                alt='한신대학교 페이지 클론코딩'
-                                className="w-50 h-50 object-cover rounded-full"
-                             />
+                    <div className='flex flex-col items-start p-10 bg-slate-50'>
+                        <h6 className='font-bold text-lg'>포트폴리오 페이지</h6>
+                        <p className='mt-2 text-gray-500'>Next.js로 시작한 첫 프로젝트. 작업과 경력을 한 페이지에 담았습니다.</p>
+                        <div className='flex flex-wrap gap-2 mt-5 '>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>Next.js</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>React</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>TypeScript</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>Tailwind CSS</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>Codex(AI)</span>
                         </div>
-                        <div>
-                            <ul className={`flex flex-col gap-2 list-disc font-semibold text-gray-500`}>
-                                <li>VScode, Photoshop</li>
-                                <li>HTML5, CSS3, Javascript, jQuery</li>
-                                <li>클론코딩 페이지</li>
-                                <li>반응형 페이지 작업</li>
-                                <li className={`list-none`}>
-                                    <a 
-                                        href='https://github.com/hooting76/Second_Publishing'
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                        className={`rounded-md bg-gray-900 px-2 py-2 font-semibold text-white transition mr-2 hover:bg-gray-700`}
-                                    >
-                                        <span><FontAwesomeIcon icon={faGithub} size="lg"/></span>
-                                        소스코드
-                                    </a>
+                        <ul 
+                            id='list-mark'
+                            className='mt-5 w-full flex flex-col gap-2'
+                        >
+                            <li className='text-gray-500 text-sm'>반응형 페이지</li>
+                            <li className='text-gray-500 text-sm'>개인 프로젝트</li>
+                        </ul>
+                        <a 
+                            href="https://github.com/hooting76/New_portfolios"
+                            target='_blank'
+                            className='mt-5 text-sm border-b font-semibold'
+                        >
+                            소스 코드 보기 ↗
+                        </a>
+                    </div>
+                </article>
 
-                                    <a 
-                                        href='https://hooting76.github.io/Second_Publishing/'
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                        className={`rounded-md bg-blue-500 px-2 py-2 font-semibold text-white transition mr-2 hover:bg-blue-400`}
-                                    >
-                                        <span><FontAwesomeIcon icon={faGlobe} size="lg"/></span>
-                                        페이지
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                {/* bluecrab */}
+                <article className='grid overflow-hidden min-h-90 border-gray-200 border rounded w-full lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1'>
+
+                    <div className='sm:order-1 md:order-1 lg:order-2'>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Q0Sch4sTW0g?si=NTNrCqQtMiyxml9d" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>   
                     </div>                    
-                </SwiperSlide>   
 
-
-                <SwiperSlide>
-                    <div className={`px-5 py-15 box-border bg-gray-100 flex flex-row justify-around items-center flex-wrap gap-5`}>
-                        <div className={`flex flex-row justify-around items-center gap-10 flex-wrap`}>
-                            <h6 className={`text-xl font-semibold`}>
-                                소방청 클론코딩<br/>
-                                <span className={`text-gray-600 italic text-sm`}>* 1인프로젝트</span>
-                            </h6>
-                            <img 
-                                src={FireClone.src}
-                                alt='소방청 페이지 클론코딩'
-                                className="w-60 h-50"
-                             />
+                    <div className='sm:order-2 md:order-2 lg:order-1 flex flex-col items-start p-10 bg-slate-50'>
+                        <h6 className='font-bold text-lg'>LMS 프로젝트</h6>
+                        <p className='mt-2 text-gray-500'>2025년 K-digital trainning 훈련과정 LMS 프로젝트. 팀장으로 협업을 이끌고 서비스를 배포했었습니다.</p>
+                        <div className='flex flex-wrap gap-2 mt-5 '>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>Spring Boot</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>React(Vite)</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>MariaDB</span>
                         </div>
-                        <div>
-                            <ul className={`flex flex-col gap-2 list-disc font-semibold text-gray-500`}>
-                                <li>VScode, Photoshop</li>
-                                <li>HTML5, CSS3, Javascript, jQuery</li>
-                                <li>클론코딩 페이지</li>
-                                <li>1400px 사이즈 고정</li>
-                                <li className={`list-none`}>
-                                    <a 
-                                        href='https://github.com/hooting76/First_Publishing'
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                        className={`rounded-md bg-gray-900 px-2 py-2 font-semibold text-white transition mr-2 hover:bg-gray-700`}
-                                    >
-                                        <span><FontAwesomeIcon icon={faGithub} size="lg"/></span>
-                                        소스코드
-                                    </a>
+                        <ul 
+                            id='list-mark'
+                            className='mt-5 w-full flex flex-col gap-2'
+                        >
+                            <li className='text-gray-500 text-sm'>전체 반응형 페이지 적용</li>
+                            <li className='text-gray-500 text-sm'>NAS기기를 활용한 서비스 배포</li>
+                            <li className='text-gray-500 text-sm'>팀 내 팀장 역할 수행</li>
+                        </ul>
+                        <a 
+                            href="https://github.com/hooting76/blue-crab-lms"
+                            target='_blank'
+                            className='mt-5 text-sm border-b font-semibold'
+                        >
+                            소스 코드 보기 ↗
+                        </a>
+                    </div>
 
-                                    <a 
-                                        href='https://hooting76.github.io/First_Publishing/'
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                        className={`rounded-md bg-blue-500 px-2 py-2 font-semibold text-white transition mr-2 hover:bg-blue-400`}
-                                    >
-                                        <span><FontAwesomeIcon icon={faGlobe} size="lg"/></span>
-                                        페이지
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                </article>
+
+                {/* koedu */}
+                <article className='grid overflow-hidden min-h-90 border-gray-200 border rounded w-full lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1'>
+
+                    <div>
+                        <img 
+                            src={Koedu.src} 
+                            alt="koeduDisplay" 
+                            className='w-full h-full min-h-80'
+                            style={{ objectFit: 'cover' }}
+                        />                        
                     </div>                    
-                </SwiperSlide>                  
 
+                    <div className='flex flex-col items-start p-10 bg-slate-50'>
+                        <h6 className='font-bold text-lg'>㈜ 한국교육평가원</h6>
+                        <p className='mt-2 text-gray-500'>실서비스의 유지보수와 신규 화면 개발, 웹 디자인을 맡았습니다.</p>
+                        <div className='flex flex-wrap gap-2 mt-5 '>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>Classic ASP</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>MS SQL</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>HTML5 · CSS3 · JS</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>jQuery</span>
+                        </div>
+                        <ul 
+                            id='list-mark'
+                            className='mt-5 w-full flex flex-col gap-2'
+                        >
+                            <li className='text-gray-500 text-sm'>jQuery와 JavaScript 코드 최적화</li>
+                            <li className='text-gray-500 text-sm'>신규 페이지 및 반응형 화면 개발</li>
+                            <li className='text-gray-500 text-sm'>ASP 페이지 유지보수</li>
+                        </ul>
+                        <p className='mt-5 text-sm border-b font-semibold'>
+                            회사 보안상 상세 내용 비공개
+                        </p>
+                    </div>
+                </article>
 
-            </Swiper>
+                {/* hs-clone */}
+                <article className='grid overflow-hidden min-h-90 border-gray-200 border rounded w-full lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1'>
+
+                    <div className='sm:order-1 md:order-1 lg:order-2'>
+                           <img 
+                            src={Hsclone.src} 
+                            alt="hsDisplay" 
+                            className='w-full h-full min-h-80'
+                            style={{ objectFit: 'cover' }}
+                        /> 
+                    </div>                    
+
+                    <div className='sm:order-2 md:order-2 lg:order-1 flex flex-col items-start p-10 bg-slate-50'>
+                        <h6 className='font-bold text-lg'>한신대학교 클론코딩</h6>
+                        <p className='mt-2 text-gray-500'>HTML과 CSS, JavaScript로 학교 웹사이트 화면을 구현했습니다.</p>
+                        <div className='flex flex-wrap gap-2 mt-5 '>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>HTML5</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>CSS3</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>JavaScript</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>jQuery</span>
+                        </div>
+                        <ul 
+                            id='list-mark'
+                            className='mt-5 w-full flex flex-col gap-2'
+                        >
+                            <li className='text-gray-500 text-sm'>반응형 페이지 작업</li>
+                            <li className='text-gray-500 text-sm'>개인 프로젝트</li>
+                            <li className='text-gray-500 text-sm'>클론코딩</li>
+                        </ul>
+                        <div className='mt-5 flex flex-nowrap w-full gap-5 items-center'>
+                            <a 
+                                href="https://github.com/hooting76/Second_Publishing"
+                                target='_blank'
+                                className='text-sm border-b font-semibold'
+                            >
+                                소스 코드 보기 ↗
+                            </a>
+                            <a 
+                                href="https://hooting76.github.io/Second_Publishing/"
+                                target='_blank'
+                                className='text-sm border-b font-semibold'
+                            >
+                                페이지 보기 ↗
+                            </a>
+                        </div>        
+                    </div>
+                </article>
+
+                {/* firefighter-clone */}
+                <article className='grid overflow-hidden min-h-90 border-gray-200 border rounded w-full lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1'>
+
+                    <div>
+                           <img 
+                            src={FireClone.src} 
+                            alt="hsDisplay" 
+                            className='w-full h-full min-h-80'
+                            style={{ objectFit: 'cover' }}
+                        /> 
+                    </div>                    
+
+                    <div className='flex flex-col items-start p-10 bg-slate-50'>
+                        <h6 className='font-bold text-lg'>소방청 클론코딩</h6>
+                        <p className='mt-2 text-gray-500'>HTML과 CSS, JavaScript를 사용한 웹사이트 클론코딩입니다.</p>
+                        <div className='flex flex-wrap gap-2 mt-5 '>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>HTML5</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>CSS3</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>JavaScript</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>jQuery</span>
+                        </div>
+                        <ul 
+                            id='list-mark'
+                            className='mt-5 w-full flex flex-col gap-2'
+                        >
+                            <li className='text-gray-500 text-sm'>1400px 고정 레이아웃</li>
+                            <li className='text-gray-500 text-sm'>개인 프로젝트</li>
+                            <li className='text-gray-500 text-sm'>클론코딩</li>
+                        </ul>
+                        <div className='mt-5 flex flex-nowrap w-full gap-5 items-center'>
+                            <a 
+                                href="https://github.com/hooting76/First_Publishing"
+                                target='_blank'
+                                className='text-sm border-b font-semibold'
+                            >
+                                소스 코드 보기 ↗
+                            </a>
+                            <a 
+                                href="https://hooting76.github.io/First_Publishing/"
+                                target='_blank'
+                                className='text-sm border-b font-semibold'
+                            >
+                                페이지 보기 ↗
+                            </a>
+                        </div>        
+                    </div>
+                </article>
+                
+            </div>
+            
         </section>
     );
 };

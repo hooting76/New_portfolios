@@ -26,7 +26,9 @@ const Section = () => {
     // 타이핑 효과 함수 끝
 
     return (
-        <section className={`w-full h-full py-30 px-15 bg-white mt-10 flex flex-wrap lg:justify-between items-center gap-7.5 md:justify-center `}>
+        <section 
+            id='home'
+            className={`w-full h-full py-30 px-15 bg-white mt-10 flex flex-wrap  items-center gap-7.5 sm:justify-center md:justify-center lg:justify-between border-b-1 border-gray-200`}>
 
             {/* left */}
             <div className="flex flex-col gap-5 flex-nowrap">
