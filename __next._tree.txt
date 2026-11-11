@@ -4,4 +4,4 @@
 :HL["/New_portfolios/_next/static/media/ko-edu.2hlxfkekt88yg.jpg","image"]
 :HL["/New_portfolios/_next/static/media/hs-clone.38k1m3ve0z6xp.jpg","image"]
 :HL["/New_portfolios/_next/static/media/firefighter.01h6kp1o2p32y.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"GC1fm-wAX--IaP9-Ve3Dl"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"eaYA5OuylOg-3ZAjBPXnu"}
