@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTypescript, faHtml5, faCss3, faJs, faNodeJs, faTailwindCss, faJava, faReact} from '@fortawesome/free-brands-svg-icons';
+import { faTypescript, faHtml5, faCss3, faJs, faNodeJs, faTailwindCss, faJava, faReact, faGit} from '@fortawesome/free-brands-svg-icons';
 import { faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -16,6 +16,7 @@ const skills = [
     { name: 'Spring Boot', icon: faJava },
     { name: 'MS SQL', icon: faDatabase },
     { name: 'MariaDB', icon: faDatabase },
+    { name: 'Git', icon: faGit },
 ];
 
 const others = [

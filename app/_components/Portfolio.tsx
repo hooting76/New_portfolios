@@ -69,6 +69,7 @@ const Portfolio = () =>{
                             <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>Spring Boot</span>
                             <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>React(Vite)</span>
                             <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>MariaDB</span>
+                            <span className='border rounded-2xl border-gray-200 px-2 py-1 text-sm text-gray-800'>Git</span>
                         </div>
                         <ul 
                             id='list-mark'
